@@ -20,6 +20,9 @@ spec:
       containers:
       - image: lalyos/12factor
         name: 12factor
+        env: 
+          - name: TITLE
+            value: gohome
         ports:
         - containerPort: 80
         resources: {}
