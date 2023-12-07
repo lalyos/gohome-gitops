@@ -8,7 +8,7 @@ flux install --export | kubectl apply -f -
 
 
 
-## Gitops level 1
+## Gitops level 1 - kustomize
 
 ```
 flux create source git gohome \
@@ -25,4 +25,13 @@ flux create source git gohome \
     --interval=1m \
     --wait=true \
     --export > flux/kust.yaml
+```
+
+## level 1 - helm
+
+```
+  flux create source helm lalyos \
+    --url=https://chart.lalyo.sh/ \
+    --interval=1m \
+    --export > flux/helm.yaml
 ```
