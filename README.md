@@ -35,3 +35,11 @@ flux create source git gohome \
     --interval=1m \
     --export > flux/helm.yaml
 ```
+
+```
+  flux create hr weekend \
+    --source=HelmRepository/lalyos \
+    --chart=12factor \
+    --values=./values-weekend.yaml \
+    --export > flux/release.yaml
+```

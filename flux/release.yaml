@@ -1,0 +1,21 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: weekend
+  namespace: flux-system
+spec:
+  chart:
+    spec:
+      chart: 12factor
+      reconcileStrategy: ChartVersion
+      sourceRef:
+        kind: HelmRepository
+        name: lalyos
+  interval: 1m0s
+  values:
+    body: <iframe src="https://giphy.com/embed/Oxv0iNX35MAPChkmhx" width="480" height="360"
+      frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/studiosoriginals-Oxv0iNX35MAPChkmhx">via
+      GIPHY</a></p>
+    color: cyan
+    title: Everyone have a nice weekend [PROD]
