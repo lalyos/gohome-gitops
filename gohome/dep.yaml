@@ -22,7 +22,9 @@ spec:
         name: 12factor
         env:
         - name: TITLE
-          value: gohome again ....
+          value: gohome again v1.1
+        - name: COLOR
+          value: cyan
         ports:
         - containerPort: 80
         resources: {}
