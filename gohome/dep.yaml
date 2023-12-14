@@ -26,7 +26,7 @@ spec:
         - name: COLOR
           value: cyan
         - name: BODY
-          value: "tepmlated body: ${body}"
+          value: "tepmlated body: ${body:=todo ...}"
         ports:
         - containerPort: 80
         resources: {}
