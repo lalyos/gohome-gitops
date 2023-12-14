@@ -25,6 +25,8 @@ spec:
           value: gohome again v1.1
         - name: COLOR
           value: cyan
+        - name: BODY
+          value: tepmlated body: ${body}
         ports:
         - containerPort: 80
         resources: {}
